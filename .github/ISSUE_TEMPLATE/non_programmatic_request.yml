@@ -1,0 +1,51 @@
+name: Non-Programmatic Request
+description: Request for non-programmatic tasks (e.g., presentations, documents, etc.)
+labels: [non-programmatic, task]
+body:
+  - type: input
+    id: title
+    attributes:
+      label: Task Title
+      description: A clear title describing the task.
+      placeholder: "[Non-Programmatic] Something to be done"
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Task Description
+      description: Provide a detailed description of the task.
+      required: true
+
+  - type: checkboxes
+    id: categories
+    attributes:
+      label: Categories
+      description: Select one or more categories this task belongs to.
+      options:
+        - label: Documentation (e.g., Prepare presentation for meeting)
+        - label: Marketing (e.g., Prepare presentation for market)
+        - label: Communication (e.g., Call to lawyer, Contact partners)
+        - label: Multimedia (e.g., Create video, Edit assets)
+        - label: Other
+
+  - type: dropdown
+    id: size
+    attributes:
+      label: Size
+      description: Estimated effort to complete the task.
+      options:
+        - XS (< 1h)
+        - S (1h - 4h)
+        - M (4h - 8h)
+        - L (8h - 16h)
+        - XL (16h - 24h)
+        - WTF (24h+)
+      required: true
+
+  - type: input
+    id: deadline
+    attributes:
+      label: Deadline
+      description: Provide a deadline if applicable (e.g., 2025-04-01).
+      placeholder: YYYY-MM-DD
