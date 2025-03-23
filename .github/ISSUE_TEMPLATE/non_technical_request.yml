@@ -21,11 +21,13 @@ body:
       label: Categories
       description: Select one or more categories this task belongs to.
       options:
-        - label: Documentation (e.g., Prepare presentation for meeting)
+        - label: Documentation (e.g., Prepare documentation for some functionality)
         - label: Marketing (e.g., Prepare presentation for market)
-        - label: Communication (e.g., Call to lawyer, Contact partners)
+        - label: Communication (e.g., Contact partners, Lawyer)
         - label: Multimedia (e.g., Create video, Edit assets)
-        - label: Other
+        - label: Brainstorm (e.g., Discuss something)
+        - label: Research (e.g., Prepare information about something)
+        - label: Organizational (e.g., Prepare space, invite someone)
 
   - type: dropdown
     id: size
