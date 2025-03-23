@@ -1,21 +1,19 @@
-name: Non-Programmatic Request
-description: Request for non-programmatic tasks (e.g., presentations, documents, etc.)
-labels: [non-programmatic, task]
+name: Non-Technical Request
+description: Request for non-technical tasks (e.g., presentations, documents, calls, etc.)
+labels: [non-technical, task]
 body:
   - type: input
     id: title
     attributes:
       label: Task Title
       description: A clear title describing the task.
-      placeholder: "[Non-Programmatic] Something to be done"
-      required: true
+      placeholder: "[Non-Technical] Something to be done"
 
   - type: textarea
     id: description
     attributes:
       label: Task Description
       description: Provide a detailed description of the task.
-      required: true
 
   - type: checkboxes
     id: categories
@@ -41,7 +39,6 @@ body:
         - L (8h - 16h)
         - XL (16h - 24h)
         - WTF (24h+)
-      required: true
 
   - type: input
     id: deadline
