@@ -1,0 +1,34 @@
+name: "\U0001F4A1 Feature Request"
+description: Suggest a new feature or enhancement
+title: "[Feature] <title>"
+labels: [enhancement]
+body:
+  - type: input
+    id: summary
+    attributes:
+      label: Feature Summary
+      placeholder: Describe the feature in one sentence
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Detailed Description
+      placeholder: Explain the feature, including the user problem it solves
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance Criteria
+      placeholder: Bullet list of what must be true to consider this done
+    validations:
+      required: true
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional Notes / Mockups
+      placeholder: Optional links, sketches, references, etc.
