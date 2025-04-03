@@ -1,7 +1,7 @@
 name: "\U0001F4A1 Feature Request"
 description: Suggest a new feature or enhancement
 title: "[Feature] <title>"
-labels: [enhancement]
+labels: [type: feature]
 body:
   - type: input
     id: summary
